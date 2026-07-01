@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Web Scraper & Thumbnail Downloader</title>
+    <!-- Tailwind CSS for Modern UI -->
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-12 px-4 text-center shadow-lg">
+        <h1 class="text-3xl md:text-5xl font-bold mb-2">? Utility Scraper Pro</h1>
+        <p class="text-sm md:text-lg opacity-90">Extract and download YouTube thumbnails instantly for free.</p>
+    </header>
+
+    <!-- Main Tool Container -->
+    <main class="max-w-2xl mx-auto my-10 p-6 bg-white rounded-2xl shadow-md w-11/12">
+        <div class="mb-6">
+            <label for="videoUrl" class="block text-gray-700 font-semibold mb-2">Paste YouTube Video URL:</label>
+            <input type="url" id="videoUrl" placeholder="https://youtube.com..." 
+                   class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-600 transition">
+        </div>
+
+        <button id="scrapeBtn" class="w-full gradient-bg text-white font-bold py-3 px-6 rounded-xl hover:opacity-90 transition transform active:scale-95 shadow-md">
+            Scrape Thumbnail
+        </button>
+
+        <!-- Dynamic Results Area -->
+        <div id="resultArea" class="mt-8 hidden border-t border-gray-200 pt-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">Preview & Download</h3>
+            <div class="relative overflow-hidden rounded-xl border border-gray-200 shadow-sm bg-gray-50 p-2">
+                <img id="thumbnailPreview" src="" alt="Thumbnail Preview" class="w-full h-auto rounded-lg">
+            </div>
+            <a id="downloadBtn" download="thumbnail.jpg" href="#" 
+               class="mt-4 block text-center bg-green-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-green-700 transition shadow-md">
+                ?? Download High-Quality Image
+            </a>
+        </div>
+    </main>
+
+    <!-- Advertisement Anchor Placeholder (For Google AdSense) -->
+    <div class="max-w-4xl mx-auto my-4 text-center text-xs text-gray-400 tracking-wider uppercase">
+        Advertisement Space
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-4 text-center text-sm">
+        <p>&copy; 2026 Utility Scraper Pro. Built for developers and creators.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
